@@ -1,0 +1,24 @@
+name: PDS Demo
+type: theme
+description: "Theme to demo PDS integration."
+package: PDS
+core_version_requirement: "^8.8 || ^9"
+
+libraries:
+  - pds_demo/global-css
+  - pds_demo/local-css
+
+ckeditor_stylesheets:
+  - pds-drupal/css/main.css
+
+base theme: stable
+
+regions:
+  header: Header
+  primary_menu: Primary Menu
+  content: Content
+
+component-libraries:
+  pds:
+    paths:
+      - pds-drupal/twig
