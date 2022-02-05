@@ -11,8 +11,10 @@ use \Drupal\block_content\BlockContentInterface;
  * Implements hook_preprocess().
  */
 function pds_demo_preprocess(array &$variables, $hook) {
+  $theme_path = \Drupal::theme()->getActiveTheme()->getPath();
+
   // Global template variables.
-  $variables['image_dir'] = '/pds-drupal/img';
+  $variables['image_dir'] = $theme_path . '/pds-drupal/img';
 }
 
 /**
