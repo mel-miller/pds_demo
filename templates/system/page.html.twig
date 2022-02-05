@@ -1,0 +1,22 @@
+{# <a href="#main-content" class="skip-link">
+	{{ 'Skip to main content'|t }}
+</a> #}
+
+
+{% block header %}
+  <div class="container">
+    {{ page.header}}
+  </div>
+{% endblock %}
+
+{% block primary_menu %}
+  <div class="container">
+    {{ page.primary_menu }}
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    {{ page.content }}
+  </div>
+{% endblock %}

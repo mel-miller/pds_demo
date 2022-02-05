@@ -1,0 +1,9 @@
+{% extends "block.html.twig" %}
+
+  {% block content %}
+    {% include "@pds/quote/quote.twig" with {
+      quote_text: content.field_quote,
+      quote_attribution: content.field_attribution,
+      background_color: content.field_background_color|render|striptags|trim
+    }%}
+  {% endblock %}
