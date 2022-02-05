@@ -1,0 +1,9 @@
+global-css:
+  css:
+    theme:
+      pds-drupal/css/main.css: {}
+
+local-css:
+  css:
+    theme:
+      css/local.css: {}
