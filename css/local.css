@@ -1,0 +1,90 @@
+/* Styles for demo purposes only so it doesn't look like garbage when demoing the design system imported items. */
+
+html {
+	font-family: "Tablet Gothic", sans-serif;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 4rem;
+	padding-left: 4rem;
+}
+
+.region--header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Rough in some menu tabs. */
+.menu--tabs {
+	border: none;
+	border-bottom: 1px solid black;
+	padding-bottom: 0.5rem;
+	margin: 4rem 0 2rem;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.menu--tab {
+	display: inline-block;
+}
+
+.menu--tab__link {
+	color: black;
+	text-decoration: none;
+	font-weight: 400;
+	padding: 0.75rem 1rem 0.5rem;
+}
+
+.menu--tab__link.is-active {
+	background: black;
+	color: white;
+}
+
+.menu--tab__link:hover {
+	background-color: var(--accent-1-color);
+	color: white;
+}
+
+.menu--tab__link:focus {
+	outline: 3px solid black;
+}
+
+/* Header */
+.header-branding {
+	display: flex;
+	align-items: center;
+	padding: 1rem 0;
+	margin-bottom: 1rem;
+}
+
+.site-logo img {
+	height: 100px;
+	margin-right: 1.5rem;
+}
+
+.site-name a {
+	font-size: 30px;
+	color: black;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.block--search {
+	padding-bottom: 1rem;
+}
+
+#search-block-form {
+	display: flex;
+}
+
+#search-block-form .js-form-type-search input {
+	width: 200px;
+	height: 44px;
+	border: 1px solid var(--grey-70-color);
+	border-radius: 0;
+}
