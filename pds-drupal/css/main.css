@@ -1,0 +1,173 @@
+@font-face {
+  font-family: Adelle;
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/adelle/360074_0_0.woff2) format("woff2"), url(../fonts/adelle/360074_0_0.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tablet Gothic Condensed";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/tablet_gothic_condensed/360074_5_0.woff2) format("woff2"), url(../fonts/tablet_gothic_condensed/360074_5_0.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tablet Gothic";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/tablet_gothic/360074_3_0.woff2) format("woff2"), url(../fonts/tablet_gothic/360074_3_0.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tablet Gothic";
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/tablet_gothic/360074_2_0.woff2) format("woff2"), url(../fonts/tablet_gothic/360074_2_0.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tablet Gothic";
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/tablet_gothic/360074_4_0.woff2) format("woff2"), url(../fonts/tablet_gothic/360074_4_0.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tablet Gothic";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/tablet_gothic/360074_1_0.woff2) format("woff2"), url(../fonts/tablet_gothic/360074_1_0.woff) format("woff");
+  font-display: swap;
+}
+:root {
+  --primary-color: #ffdc28;
+  --accent-1-color: #3017a1;
+  --accent-2-color: #de256f;
+  --grey-70-color: #b2c1cb;
+  --grey-90-color: #f1f1f1;
+}
+
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.btn {
+  font-family: "Tablet Gothic", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: 0px;
+  border: 3px solid;
+  transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+}
+
+.btn:hover {
+  background-color: var(--accent-1-color);
+  border-color: var(--accent-1-color);
+  color: white;
+}
+
+/* Button types */
+.btn--primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: black;
+}
+
+.btn--secondary {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.btn--tertiary {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+.btn--ghost-purple {
+  background-color: white;
+  border-color: var(--accent-1-color);
+  color: var(--accent-1-color);
+}
+
+.btn--ghost-white {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+/* Disabled button */
+.btn[disabled] {
+  background-color: var(--grey-70-color);
+  border-color: var(--grey-70-color);
+  color: white;
+}
+
+/* Button sizes */
+.btn--lg {
+  padding: 18px 40px 16px;
+  font-size: 20px;
+}
+
+.btn--md {
+  padding: 15px 32px 13px;
+  font-size: 18px;
+}
+
+.btn--sm {
+  padding: 12px 28px 10px;
+  font-size: 16px;
+}
+
+.quote,
+.quote--white {
+  background-color: white;
+  color: black;
+}
+
+.quote--light-grey {
+  background-color: var(--grey-90-color);
+  color: black;
+}
+
+.quote--black {
+  background-color: black;
+  color: white;
+}
+
+.quote__inner {
+  display: flex;
+  align-items: flex-start;
+  padding: 60px;
+}
+
+.quote__bolt {
+  fill: var(--primary-color);
+  width: 48px;
+  height: 28px;
+}
+
+.quote__bolt--right {
+  transform: rotateY(180deg);
+}
+
+.quote__text {
+  font-family: Adelle, serif;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0px 0px 40px;
+}
+
+.quote__attribution {
+  font-family: "Tablet Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
