@@ -1,0 +1,65 @@
+{
+	"name": "mel-miller/pds_demo",
+	"description": "Drupal 9 theme to demo PDS integration.",
+	"type": "drupal-theme",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "mel-miller",
+			"email": "melissa.miller@pantheon.io"
+		}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://packages.drupal.org/8"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/mel-miller/pds-drupal.git"
+		}
+	],
+	"require": {
+		"oomphinc/composer-installers-extender": "^2.0",
+		"drupal/components": "^2.4"
+	},
+	"require-dev": {
+		"mel-miller/pds-drupal": "dev-main"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"rm -rf core/",
+			"rm -rf modules/",
+			"rm -rf profiles/",
+			"rm -rf themes/",
+			"rm -rf vendor/",
+			"rm -rf web/",
+			"rm -rf .gitattributes"
+		],
+		"post-update-cmd": [
+			"rm -rf core/",
+			"rm -rf modules/",
+			"rm -rf profiles/",
+			"rm -rf themes/",
+			"rm -rf vendor/",
+			"rm -rf web/",
+			"rm -rf .gitattributes"
+		]
+	},
+	"extra": {
+		"installer-types": [
+			"design-system"
+		],
+		"installer-paths": {
+			"{$name}": [
+				"type:design-system"
+			]
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"oomphinc/composer-installers-extender": true
+		}
+	}
+}
