@@ -46,6 +46,8 @@
   --accent-2-color: #de256f;
   --grey-70-color: #b2c1cb;
   --grey-90-color: #f1f1f1;
+  --focus-color: #00749c;
+  --focus-light-color: #37cbff;
 }
 
 figure {
@@ -66,6 +68,11 @@ figure {
   background-color: var(--accent-1-color);
   border-color: var(--accent-1-color);
   color: white;
+}
+
+.btn:focus {
+  outline: 3px solid var(--focus-color);
+  outline-offset: 2px;
 }
 
 /* Button types */
@@ -98,6 +105,9 @@ figure {
   border-color: white;
   color: white;
 }
+.btn--ghost-white:focus {
+  outline-color: var(--focus-light-color);
+}
 
 /* Disabled button */
 .btn[disabled] {
@@ -120,6 +130,82 @@ figure {
 .btn--sm {
   padding: 12px 28px 10px;
   font-size: 16px;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  padding-top: 4px;
+}
+
+.close-btn:focus {
+  outline: 2px solid;
+}
+
+.close-btn[disabled] {
+  color: var(--grey-70-color);
+}
+
+.close-btn--black {
+  color: black;
+}
+.close-btn--black:hover {
+  color: var(--accent-1-color);
+}
+.close-btn--black:focus {
+  outline-color: var(--accent-1-color);
+  color: var(--accent-1-color);
+}
+
+.close-btn--white {
+  color: white;
+}
+.close-btn--white:hover {
+  color: var(--primary-color);
+}
+.close-btn--white:focus {
+  outline-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 10%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.625);
+  z-index: 99;
+}
+
+.modal__content {
+  position: relative;
+  padding: 2rem 2.5rem;
+  margin: auto;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.32) 0px 1px 8px 0px;
+}
+.modal__content .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal__content--white {
+  background-color: white;
+  color: black;
+}
+
+.modal__content--black {
+  background-color: black;
+  color: white;
+}
+
+.modal__heading {
+  font-family: "Tablet Gothic", sans-serif;
+  margin-top: 0;
 }
 
 .quote,

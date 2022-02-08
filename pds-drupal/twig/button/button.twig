@@ -1,1 +1,1 @@
-<button {% if disabled -%} disabled {% endif -%} class="btn btn--{{ type }} btn--{{ size }}">{{ text }}</button>
+<button {% if disabled -%} disabled {% endif -%} class="btn btn--{{ type|default("primary") }} btn--{{ size|default("lg") }}">{{ text }}</button>
