@@ -555,7 +555,7 @@ figure {
 .close-btn {
   background-color: transparent;
   border: none;
-  padding-top: 4px;
+  padding: 4px 6px 2px;
 }
 
 .close-btn:focus {
@@ -604,8 +604,8 @@ figure {
   position: relative;
   padding: 2rem 2.5rem;
   margin: auto;
-  width: 70%;
-  max-width: 928px;
+  width: 60%;
+  max-width: 920px;
   box-shadow: rgba(0, 0, 0, 0.32) 0px 1px 8px 0px;
 }
 .modal__content .close-btn {
