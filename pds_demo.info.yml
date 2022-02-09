@@ -5,11 +5,12 @@ package: PDS
 core_version_requirement: "^8.8 || ^9"
 
 libraries:
-  - pds_demo/global-css
+  - pds_demo/pds-css
   - pds_demo/local-css
+  - pds_demo/pds-js
 
 ckeditor_stylesheets:
-  - pds-drupal/css/main.css
+  - pds-drupal/css/pds-main.css
 
 base theme: stable
 

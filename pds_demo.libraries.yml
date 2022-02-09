@@ -1,9 +1,13 @@
-global-css:
+pds-css:
   css:
     theme:
-      pds-drupal/css/main.css: {}
+      pds-drupal/css/pds-main.css: {}
 
 local-css:
   css:
     theme:
       css/local.css: {}
+
+pds-js:
+  js:
+    pds-drupal/js/pds-main.js: {}
