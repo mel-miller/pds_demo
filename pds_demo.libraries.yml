@@ -11,3 +11,5 @@ local-css:
 pds-js:
   js:
     pds-drupal/js/pds-main.js: {}
+  dependencies:
+    - core/drupal
