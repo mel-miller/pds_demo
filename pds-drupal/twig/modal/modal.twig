@@ -1,10 +1,10 @@
-<button id="openBtn" class="{{ open_classes }}">{{ open_txt }}</button>
+<button id="modalBtn--{{ modal_num }}" class="{{ open_classes }}">{{ open_txt }}</button>
 
-<div class="modal">
+<div id="modal--{{ modal_num }}" class="modal">
   <div class="modal__content modal__content--{{ bg_color|default("white") }}" 
   tabindex="-1" role="dialog" aria-modal="true">
     
-    {% include '../close-button/close-button.twig' with {
+    {% include '@pds/close-button/close-button.twig' with {
       color: (bg_color == "white") ? "black" : "white",
     } %}
   

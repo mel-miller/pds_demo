@@ -22,9 +22,11 @@ function pds_demo_preprocess(array &$variables, $hook) {
  */
 function pds_demo_preprocess_block(&$variables) {
   $content = $variables['elements']['content'];
+
   if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
-    // Sets block bundle variable for custom block types.
+    // Sets extra vars for custom block types.
     $variables['block_bundle'] = $content['#block_content']->bundle();
+    $variables['block_id_num'] = $content['#block_content']->id();
   }
 }
 

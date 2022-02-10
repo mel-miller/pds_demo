@@ -4757,12 +4757,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mel-miller/pds-drupal.git",
-                "reference": "5c41abc4fccc2a75349511aacff2dc4bbe9b9c2a"
+                "reference": "e038f44584ce4b7d4ee4418d2348ee77c066770a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mel-miller/pds-drupal/zipball/5c41abc4fccc2a75349511aacff2dc4bbe9b9c2a",
-                "reference": "5c41abc4fccc2a75349511aacff2dc4bbe9b9c2a",
+                "url": "https://api.github.com/repos/mel-miller/pds-drupal/zipball/e038f44584ce4b7d4ee4418d2348ee77c066770a",
+                "reference": "e038f44584ce4b7d4ee4418d2348ee77c066770a",
                 "shasum": ""
             },
             "require": {
@@ -4784,7 +4784,7 @@
                 "source": "https://github.com/mel-miller/pds-drupal/tree/main",
                 "issues": "https://github.com/mel-miller/pds-drupal/issues"
             },
-            "time": "2022-02-09T00:53:59+00:00"
+            "time": "2022-02-10T01:30:07+00:00"
         }
     ],
     "aliases": [],
