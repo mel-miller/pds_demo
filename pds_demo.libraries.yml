@@ -1,7 +1,7 @@
 pds-css:
   css:
     theme:
-      pds-drupal/css/pds-main.css: {}
+      pds-drupal/css/pds-main.min.css: {}
 
 local-css:
   css:
@@ -10,6 +10,6 @@ local-css:
 
 pds-js:
   js:
-    pds-drupal/js/pds-main.js: {}
+    pds-drupal/js/pds-main.min.js: {}
   dependencies:
     - core/drupal
