@@ -1,0 +1,53 @@
+.pds-quote,
+.pds-quote--white {
+	background-color: white;
+	color: black;
+}
+
+.pds-quote--light-grey {
+	background-color: var(--grey-90-color);
+	color: black;
+}
+
+.pds-quote--black {
+	background-color: black;
+	color: white;
+}
+
+.pds-quote figure {
+	margin-block-start: 0;
+}
+
+.pds-quote__inner {
+	display: flex;
+	align-items: flex-start;
+	padding: 60px;
+}
+
+.pds-quote__bolt {
+	fill: var(--primary-color);
+	width: 48px;
+	height: 28px;
+}
+
+.pds-quote__bolt--right {
+	transform: rotateY(180deg);
+}
+
+.pds-quote__text {
+	font-family: Adelle, serif;
+	font-size: 32px;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0px 0px 40px;
+}
+
+.pds-quote__attribution {
+	font-family: "Tablet Gothic", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-align: center;
+}

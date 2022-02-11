@@ -1,14 +1,13 @@
 Drupal.behaviors.modal = {
 	attach(context) {
-		const modals = document.querySelectorAll(".modal");
+		const modals = document.querySelectorAll(".pds-modal");
 
 		modals.forEach((modal) => {
 			const modalId = modal.id;
-			const modalNum = modalId.substring(modalId.indexOf("--") + 2);
-
-			const openBtn = document.getElementById(`modalBtn--${modalNum}`);
-			const currentModal = document.getElementById(`modal--${modalNum}`);
-			const closeBtn = currentModal.querySelector(".close-btn");
+			const modalNum = modalId.substring(modalId.indexOf("modal_") + 6);
+			const openBtn = document.getElementById(`modalBtn_${modalNum}`);
+			const currentModal = document.getElementById(`modal_${modalNum}`);
+			const closeBtn = currentModal.querySelector(".pds-close-btn");
 
 			// Open modal via open button.
 			openBtn.addEventListener("click", (e) => {

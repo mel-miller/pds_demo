@@ -50,12 +50,7 @@
   --focus-light-color: #37cbff;
 }
 
-figure {
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
-.btn {
+.pds-btn {
   font-family: "Tablet Gothic", sans-serif;
   font-weight: 700;
   line-height: 1;
@@ -64,111 +59,111 @@ figure {
   transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
 }
 
-.btn:hover {
+.pds-btn:hover {
   background-color: var(--accent-1-color);
   border-color: var(--accent-1-color);
   color: white;
 }
 
-.btn:focus {
+.pds-btn:focus {
   outline: 3px solid var(--focus-color);
   outline-offset: 2px;
 }
 
 /* Button types */
-.btn--primary {
+.pds-btn--primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
   color: black;
 }
 
-.btn--secondary {
+.pds-btn--secondary {
   background-color: white;
   border-color: black;
   color: black;
 }
 
-.btn--tertiary {
+.pds-btn--tertiary {
   background-color: black;
   border-color: black;
   color: white;
 }
 
-.btn--ghost-purple {
+.pds-btn--ghost-purple {
   background-color: white;
   border-color: var(--accent-1-color);
   color: var(--accent-1-color);
 }
 
-.btn--ghost-white {
+.pds-btn--ghost-white {
   background-color: black;
   border-color: white;
   color: white;
 }
-.btn--ghost-white:focus {
+.pds-btn--ghost-white:focus {
   outline-color: var(--focus-light-color);
 }
 
 /* Disabled button */
-.btn[disabled] {
+.pds-btn[disabled] {
   background-color: var(--grey-70-color);
   border-color: var(--grey-70-color);
   color: white;
 }
 
 /* Button sizes */
-.btn--lg {
+.pds-btn--lg {
   padding: 18px 40px 16px;
   font-size: 20px;
 }
 
-.btn--md {
+.pds-btn--md {
   padding: 15px 32px 13px;
   font-size: 18px;
 }
 
-.btn--sm {
+.pds-btn--sm {
   padding: 12px 28px 10px;
   font-size: 16px;
 }
 
-.close-btn {
+.pds-close-btn {
   background-color: transparent;
   border: none;
   padding: 4px 6px 2px;
 }
 
-.close-btn:focus {
+.pds-close-btn:focus {
   outline: 2px solid;
 }
 
-.close-btn[disabled] {
+.pds-close-btn[disabled] {
   color: var(--grey-70-color);
 }
 
-.close-btn--black {
+.pds-close-btn--black {
   color: black;
 }
-.close-btn--black:hover {
+.pds-close-btn--black:hover {
   color: var(--accent-1-color);
 }
-.close-btn--black:focus {
+.pds-close-btn--black:focus {
   outline-color: var(--accent-1-color);
   color: var(--accent-1-color);
 }
 
-.close-btn--white {
+.pds-close-btn--white {
   color: white;
 }
-.close-btn--white:hover {
+.pds-close-btn--white:hover {
   color: var(--primary-color);
 }
-.close-btn--white:focus {
+.pds-close-btn--white:focus {
   outline-color: var(--primary-color);
   color: var(--primary-color);
 }
 
-.modal {
+.pds-modal {
   display: none;
   position: fixed;
   padding-top: 20%;
@@ -178,9 +173,10 @@ figure {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
+  font-family: "Tablet Gothic", sans-serif;
 }
 
-.modal__content {
+.pds-modal__content {
   position: relative;
   padding: 2rem 2.5rem;
   margin: auto;
@@ -188,60 +184,59 @@ figure {
   max-width: 920px;
   box-shadow: rgba(0, 0, 0, 0.32) 0px 1px 8px 0px;
 }
-.modal__content .close-btn {
+.pds-modal__content .pds-close-btn {
   position: absolute;
   top: 1rem;
   right: 1rem;
 }
 
-.modal__content--white {
+.pds-modal__content--white {
   background-color: white;
   color: black;
 }
 
-.modal__content--black {
+.pds-modal__content--black {
   background-color: black;
   color: white;
 }
 
-.modal__heading {
-  font-family: "Tablet Gothic", sans-serif;
-  margin-top: 0;
-}
-
-.quote,
-.quote--white {
+.pds-quote,
+.pds-quote--white {
   background-color: white;
   color: black;
 }
 
-.quote--light-grey {
+.pds-quote--light-grey {
   background-color: var(--grey-90-color);
   color: black;
 }
 
-.quote--black {
+.pds-quote--black {
   background-color: black;
   color: white;
 }
 
-.quote__inner {
+.pds-quote figure {
+  margin-block-start: 0;
+}
+
+.pds-quote__inner {
   display: flex;
   align-items: flex-start;
   padding: 60px;
 }
 
-.quote__bolt {
+.pds-quote__bolt {
   fill: var(--primary-color);
   width: 48px;
   height: 28px;
 }
 
-.quote__bolt--right {
+.pds-quote__bolt--right {
   transform: rotateY(180deg);
 }
 
-.quote__text {
+.pds-quote__text {
   font-family: Adelle, serif;
   font-size: 32px;
   line-height: 1.2;
@@ -249,7 +244,7 @@ figure {
   margin: 0px 0px 40px;
 }
 
-.quote__attribution {
+.pds-quote__attribution {
   font-family: "Tablet Gothic", sans-serif;
   font-weight: 700;
   font-size: 16px;

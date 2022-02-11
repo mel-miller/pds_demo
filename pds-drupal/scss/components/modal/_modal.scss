@@ -1,0 +1,37 @@
+.pds-modal {
+	display: none;
+	position: fixed;
+	padding-top: 20%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 99;
+	font-family: "Tablet Gothic", sans-serif;
+}
+
+.pds-modal__content {
+	position: relative;
+	padding: 2rem 2.5rem;
+	margin: auto;
+	width: 60%;
+	max-width: 920px;
+	box-shadow: rgba(0, 0, 0, 0.32) 0px 1px 8px 0px;
+
+	.pds-close-btn {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+	}
+}
+
+.pds-modal__content--white {
+	background-color: white;
+	color: black;
+}
+
+.pds-modal__content--black {
+	background-color: black;
+	color: white;
+}

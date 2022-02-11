@@ -1,0 +1,77 @@
+.pds-btn {
+	font-family: "Tablet Gothic", sans-serif;
+	font-weight: 700;
+	line-height: 1;
+	border-radius: 0px;
+	border: 3px solid;
+	transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+}
+
+.pds-btn:hover {
+	background-color: var(--accent-1-color);
+	border-color: var(--accent-1-color);
+	color: white;
+}
+
+.pds-btn:focus {
+	outline: 3px solid var(--focus-color);
+	outline-offset: 2px;
+}
+
+/* Button types */
+.pds-btn--primary {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+	color: black;
+}
+
+.pds-btn--secondary {
+	background-color: white;
+	border-color: black;
+	color: black;
+}
+
+.pds-btn--tertiary {
+	background-color: black;
+	border-color: black;
+	color: white;
+}
+
+.pds-btn--ghost-purple {
+	background-color: white;
+	border-color: var(--accent-1-color);
+	color: var(--accent-1-color);
+}
+
+.pds-btn--ghost-white {
+	background-color: black;
+	border-color: white;
+	color: white;
+
+	&:focus {
+		outline-color: var(--focus-light-color);
+	}
+}
+
+/* Disabled button */
+.pds-btn[disabled] {
+	background-color: var(--grey-70-color);
+	border-color: var(--grey-70-color);
+	color: white;
+}
+
+/* Button sizes */
+.pds-btn--lg {
+	padding: 18px 40px 16px;
+	font-size: 20px;
+}
+
+.pds-btn--md {
+	padding: 15px 32px 13px;
+	font-size: 18px;
+}
+
+.pds-btn--sm {
+	padding: 12px 28px 10px;
+	font-size: 16px;
+}

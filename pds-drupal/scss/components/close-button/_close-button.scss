@@ -1,0 +1,39 @@
+.pds-close-btn {
+	background-color: transparent;
+	border: none;
+	padding: 4px 6px 2px;
+}
+
+.pds-close-btn:focus {
+	outline: 2px solid;
+}
+
+.pds-close-btn[disabled] {
+	color: var(--grey-70-color);
+}
+
+.pds-close-btn--black {
+	color: black;
+
+	&:hover {
+		color: var(--accent-1-color);
+	}
+
+	&:focus {
+		outline-color: var(--accent-1-color);
+		color: var(--accent-1-color);
+	}
+}
+
+.pds-close-btn--white {
+	color: white;
+
+	&:hover {
+		color: var(--primary-color);
+	}
+
+	&:focus {
+		outline-color: var(--primary-color);
+		color: var(--primary-color);
+	}
+}
