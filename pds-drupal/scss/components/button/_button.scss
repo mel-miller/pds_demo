@@ -1,5 +1,5 @@
 .pds-btn {
-	font-family: "Tablet Gothic", sans-serif;
+	font-family: var(--sans-font);
 	font-weight: 700;
 	line-height: 1;
 	border-radius: 0px;
@@ -10,7 +10,7 @@
 .pds-btn:hover {
 	background-color: var(--accent-1-color);
 	border-color: var(--accent-1-color);
-	color: white;
+	color: var(--white-color);
 }
 
 .pds-btn:focus {
@@ -18,46 +18,46 @@
 	outline-offset: 2px;
 }
 
-/* Button types */
+// Button types
 .pds-btn--primary {
 	background-color: var(--primary-color);
 	border-color: var(--primary-color);
-	color: black;
+	color: var(--black-color);
 }
 
 .pds-btn--secondary {
-	background-color: white;
-	border-color: black;
-	color: black;
+	background-color: var(--white-color);
+	border-color: var(--black-color);
+	color: var(--black-color);
 }
 
 .pds-btn--tertiary {
-	background-color: black;
-	border-color: black;
-	color: white;
+	background-color: var(--black-color);
+	border-color: var(--black-color);
+	color: var(--white-color);
 }
 
 .pds-btn--ghost-purple {
-	background-color: white;
+	background-color: var(--white-color);
 	border-color: var(--accent-1-color);
 	color: var(--accent-1-color);
 }
 
 .pds-btn--ghost-white {
-	background-color: black;
-	border-color: white;
-	color: white;
+	background-color: var(--black-color);
+	border-color: var(--white-color);
+	color: var(--white-color);
 
 	&:focus {
 		outline-color: var(--focus-light-color);
 	}
 }
 
-/* Disabled button */
+// Disabled button
 .pds-btn[disabled] {
 	background-color: var(--grey-70-color);
 	border-color: var(--grey-70-color);
-	color: white;
+	color: var(--white-color);
 }
 
 /* Button sizes */

@@ -1,17 +1,17 @@
 .pds-quote,
 .pds-quote--white {
-	background-color: white;
-	color: black;
+	background-color: var(--white-color);
+	color: var(--black-color);
 }
 
 .pds-quote--light-grey {
 	background-color: var(--grey-90-color);
-	color: black;
+	color: var(--black-color);
 }
 
 .pds-quote--black {
-	background-color: black;
-	color: white;
+	background-color: var(--black-color);
+	color: var(--white-color);
 }
 
 .pds-quote figure {
@@ -35,7 +35,7 @@
 }
 
 .pds-quote__text {
-	font-family: Adelle, serif;
+	font-family: var(--serif-font);
 	font-size: 32px;
 	line-height: 1.2;
 	text-align: center;
@@ -43,7 +43,7 @@
 }
 
 .pds-quote__attribution {
-	font-family: "Tablet Gothic", sans-serif;
+	font-family: var(--sans-font);
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.5;

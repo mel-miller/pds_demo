@@ -1,9 +1,30 @@
 :root {
+	// Fonts.
+	--sans-font: "Tablet Gothic", sans-serif;
+	--sans-font-condensed: "Tablet Gothic Condensed", sans-serif;
+	--serif-font: "Adelle", serif;
+	// Colors.
 	--primary-color: #ffdc28;
 	--accent-1-color: #3017a1;
 	--accent-2-color: #de256f;
+	--black-color: #000000;
+	--grey-20-color: #2b353d;
+	--grey-30-color: #414d56;
+	--grey-40-color: #647684;
 	--grey-70-color: #b2c1cb;
+	--grey-80-color: #dce5e7;
 	--grey-90-color: #f1f1f1;
+	--white-color: #ffffff;
 	--focus-color: #127cbb;
 	--focus-light-color: #37cbff;
+	--overlay-color: rgba(0, 0, 0, 0.5);
+	// Elevations.
+	--subtle-1-elev: rgb(0 0 0 / 10%) 0px 1px 8px 0px;
+	--subtle-2-elev: rgb(0 0 0 / 10%) 0px 2px 16px 0px;
+	--subtle-3-elev: rgb(0 0 0 / 10%) 0px 4px 32px 0px;
+	--subtle-4-elev: rgb(0 0 0 / 10%) 0px 8px 64px 0px;
+	--hard-1-elev: rgb(0 0 0 / 32%) 0px 1px 8px 0px;
+	--hard-2-elev: rgb(0 0 0 / 32%) 0px 2px 16px 0px;
+	--hard-3-elev: rgb(0 0 0 / 32%) 0px 4px 32px 0px;
+	--hard-4-elev: rgb(0 0 0 / 32%) 0px 8px 64px 0px;
 }

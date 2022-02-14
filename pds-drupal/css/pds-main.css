@@ -41,17 +41,35 @@
   font-display: swap;
 }
 :root {
+  --sans-font: "Tablet Gothic", sans-serif;
+  --sans-font-condensed: "Tablet Gothic Condensed", sans-serif;
+  --serif-font: "Adelle", serif;
   --primary-color: #ffdc28;
   --accent-1-color: #3017a1;
   --accent-2-color: #de256f;
+  --black-color: #000000;
+  --grey-20-color: #2b353d;
+  --grey-30-color: #414d56;
+  --grey-40-color: #647684;
   --grey-70-color: #b2c1cb;
+  --grey-80-color: #dce5e7;
   --grey-90-color: #f1f1f1;
+  --white-color: #ffffff;
   --focus-color: #127cbb;
   --focus-light-color: #37cbff;
+  --overlay-color: rgba(0, 0, 0, 0.5);
+  --subtle-1-elev: rgb(0 0 0 / 10%) 0px 1px 8px 0px;
+  --subtle-2-elev: rgb(0 0 0 / 10%) 0px 2px 16px 0px;
+  --subtle-3-elev: rgb(0 0 0 / 10%) 0px 4px 32px 0px;
+  --subtle-4-elev: rgb(0 0 0 / 10%) 0px 8px 64px 0px;
+  --hard-1-elev: rgb(0 0 0 / 32%) 0px 1px 8px 0px;
+  --hard-2-elev: rgb(0 0 0 / 32%) 0px 2px 16px 0px;
+  --hard-3-elev: rgb(0 0 0 / 32%) 0px 4px 32px 0px;
+  --hard-4-elev: rgb(0 0 0 / 32%) 0px 8px 64px 0px;
 }
 
 .pds-btn {
-  font-family: "Tablet Gothic", sans-serif;
+  font-family: var(--sans-font);
   font-weight: 700;
   line-height: 1;
   border-radius: 0px;
@@ -62,7 +80,7 @@
 .pds-btn:hover {
   background-color: var(--accent-1-color);
   border-color: var(--accent-1-color);
-  color: white;
+  color: var(--white-color);
 }
 
 .pds-btn:focus {
@@ -70,45 +88,43 @@
   outline-offset: 2px;
 }
 
-/* Button types */
 .pds-btn--primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
-  color: black;
+  color: var(--black-color);
 }
 
 .pds-btn--secondary {
-  background-color: white;
-  border-color: black;
-  color: black;
+  background-color: var(--white-color);
+  border-color: var(--black-color);
+  color: var(--black-color);
 }
 
 .pds-btn--tertiary {
-  background-color: black;
-  border-color: black;
-  color: white;
+  background-color: var(--black-color);
+  border-color: var(--black-color);
+  color: var(--white-color);
 }
 
 .pds-btn--ghost-purple {
-  background-color: white;
+  background-color: var(--white-color);
   border-color: var(--accent-1-color);
   color: var(--accent-1-color);
 }
 
 .pds-btn--ghost-white {
-  background-color: black;
-  border-color: white;
-  color: white;
+  background-color: var(--black-color);
+  border-color: var(--white-color);
+  color: var(--white-color);
 }
 .pds-btn--ghost-white:focus {
   outline-color: var(--focus-light-color);
 }
 
-/* Disabled button */
 .pds-btn[disabled] {
   background-color: var(--grey-70-color);
   border-color: var(--grey-70-color);
-  color: white;
+  color: var(--white-color);
 }
 
 /* Button sizes */
@@ -142,7 +158,7 @@
 }
 
 .pds-close-btn--black {
-  color: black;
+  color: var(--black-color);
 }
 .pds-close-btn--black:hover {
   color: var(--accent-1-color);
@@ -153,7 +169,7 @@
 }
 
 .pds-close-btn--white {
-  color: white;
+  color: var(--white-color);
 }
 .pds-close-btn--white:hover {
   color: var(--primary-color);
@@ -171,9 +187,9 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--overlay-color);
   z-index: 99;
-  font-family: "Tablet Gothic", sans-serif;
+  font-family: var(--sans-font);
 }
 
 .pds-modal__content {
@@ -182,7 +198,7 @@
   margin: auto;
   width: 60%;
   max-width: 920px;
-  box-shadow: rgba(0, 0, 0, 0.32) 0px 1px 8px 0px;
+  box-shadow: var(--hard-1-elev);
 }
 .pds-modal__content .pds-close-btn {
   position: absolute;
@@ -191,29 +207,29 @@
 }
 
 .pds-modal__content--white {
-  background-color: white;
-  color: black;
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 .pds-modal__content--black {
-  background-color: black;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
 .pds-quote,
 .pds-quote--white {
-  background-color: white;
-  color: black;
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 .pds-quote--light-grey {
   background-color: var(--grey-90-color);
-  color: black;
+  color: var(--black-color);
 }
 
 .pds-quote--black {
-  background-color: black;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
 .pds-quote figure {
@@ -237,7 +253,7 @@
 }
 
 .pds-quote__text {
-  font-family: Adelle, serif;
+  font-family: var(--serif-font);
   font-size: 32px;
   line-height: 1.2;
   text-align: center;
@@ -245,11 +261,88 @@
 }
 
 .pds-quote__attribution {
-  font-family: "Tablet Gothic", sans-serif;
+  font-family: var(--sans-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+}
+
+.pds-tabset__tabs {
+  display: flex;
+  width: 100%;
+  border-bottom: 3px solid var(--grey-70-color);
+}
+
+.pds-tabset__tab {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  cursor: pointer;
+  flex-grow: 1;
+  padding: 1.25rem 0 1rem;
+  font-family: var(--sans-font);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  border: none;
+  margin-right: 1px;
+}
+.pds-tabset__tab[aria-selected=true], .pds-tabset__tab:focus {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  outline: none;
+}
+.pds-tabset__tab:hover {
+  background-color: var(--accent-1-color);
+  color: var(--white-color);
+}
+.pds-tabset__tab[disabled] {
+  background-color: var(--grey-70-color);
+  color: var(--white-color);
+}
+
+.pds-tabset__tab-title {
+  border-left: 1px solid var(--grey-70-color);
+}
+
+.pds-tabset__tab:first-child .pds-tabset__tab-title {
+  border-left: none;
+}
+
+.pds-tabset__tab[disabled] .pds-tabset__tab-title,
+.pds-tabset__tab[disabled]:hover .pds-tabset__tab-title,
+.pds-tabset__tab:hover + .pds-tabset__tab[disabled] .pds-tabset__tab-title,
+.pds-tabset__tab[aria-selected=true] + .pds-tabset__tab[disabled] .pds-tabset__tab-title,
+.pds-tabset__tab[aria-selected=true] + .pds-tabset__tab[disabled]:hover .pds-tabset__tab-title {
+  border-left-color: var(--grey-70-color);
+}
+
+.pds-tabset__tab[aria-selected=true] .pds-tabset__tab-title,
+.pds-tabset__tab:hover + .pds-tabset__tab[aria-selected=true] .pds-tabset__tab-title {
+  border-left-color: var(--black-color);
+}
+
+.pds-tabset__tab:hover .pds-tabset__tab-title,
+.pds-tabset__tab[aria-selected=true] + .pds-tabset__tab:hover .pds-tabset__tab-title,
+.pds-tabset__tab[disabled] + .pds-tabset__tab:hover .pds-tabset__tab-title {
+  border-left-color: var(--accent-1-color);
+}
+
+.pds-tabset__tab[aria-selected=true] + .pds-tabset__tab .pds-tabset__tab-title,
+.pds-tabset__tab[disabled] + .pds-tabset__tab .pds-tabset__tab-title,
+.pds-tabset__tab:hover + .pds-tabset__tab .pds-tabset__tab-title {
+  border-left-color: var(--white-color);
+}
+
+.pds-tabset__panel {
+  padding: 1.5rem 1rem;
+  font-family: var(--sans-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.pds-tabset__panel:focus {
+  outline: 2px solid var(--focus-color);
 }

@@ -1,0 +1,94 @@
+// Tabs.
+.pds-tabset__tabs {
+	display: flex;
+	width: 100%;
+	border-bottom: 3px solid var(--grey-70-color);
+}
+
+.pds-tabset__tab {
+	background-color: var(--white-color);
+	color: var(--black-color);
+	cursor: pointer;
+	flex-grow: 1;
+	padding: 1.25rem 0 1rem;
+	font-family: var(--sans-font);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+	border: none;
+	margin-right: 1px;
+
+	&[aria-selected="true"],
+	&:focus {
+		background-color: var(--black-color);
+		color: var(--white-color);
+		outline: none;
+	}
+
+	&:hover {
+		background-color: var(--accent-1-color);
+		color: var(--white-color);
+	}
+
+	&[disabled] {
+		background-color: var(--grey-70-color);
+		color: var(--white-color);
+	}
+}
+
+// Tab dividing lines.
+.pds-tabset__tab-title {
+	border-left: 1px solid var(--grey-70-color);
+}
+
+.pds-tabset__tab:first-child {
+	.pds-tabset__tab-title {
+		border-left: none;
+	}
+}
+
+.pds-tabset__tab[disabled],
+.pds-tabset__tab[disabled]:hover,
+.pds-tabset__tab:hover + .pds-tabset__tab[disabled],
+.pds-tabset__tab[aria-selected="true"] + .pds-tabset__tab[disabled],
+.pds-tabset__tab[aria-selected="true"] + .pds-tabset__tab[disabled]:hover {
+	.pds-tabset__tab-title {
+		border-left-color: var(--grey-70-color);
+	}
+}
+
+.pds-tabset__tab[aria-selected="true"],
+.pds-tabset__tab:hover + .pds-tabset__tab[aria-selected="true"] {
+	.pds-tabset__tab-title {
+		border-left-color: var(--black-color);
+	}
+}
+
+.pds-tabset__tab:hover,
+.pds-tabset__tab[aria-selected="true"] + .pds-tabset__tab:hover,
+.pds-tabset__tab[disabled] + .pds-tabset__tab:hover {
+	.pds-tabset__tab-title {
+		border-left-color: var(--accent-1-color);
+	}
+}
+
+.pds-tabset__tab[aria-selected="true"] + .pds-tabset__tab,
+.pds-tabset__tab[disabled] + .pds-tabset__tab,
+.pds-tabset__tab:hover + .pds-tabset__tab {
+	.pds-tabset__tab-title {
+		border-left-color: var(--white-color);
+	}
+}
+
+// Panels.
+.pds-tabset__panel {
+	padding: 1.5rem 1rem;
+	font-family: var(--sans-font);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+
+	&:focus {
+		outline: 2px solid var(--focus-color);
+	}
+}

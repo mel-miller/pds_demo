@@ -13,7 +13,7 @@
 }
 
 .pds-close-btn--black {
-	color: black;
+	color: var(--black-color);
 
 	&:hover {
 		color: var(--accent-1-color);
@@ -26,7 +26,7 @@
 }
 
 .pds-close-btn--white {
-	color: white;
+	color: var(--white-color);
 
 	&:hover {
 		color: var(--primary-color);
