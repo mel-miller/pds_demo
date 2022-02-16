@@ -83,9 +83,8 @@
   color: var(--white-color);
 }
 
-.pds-btn:focus {
-  outline: 3px solid var(--focus-color);
-  outline-offset: 2px;
+.pds-btn:hover:focus {
+  outline: none;
 }
 
 .pds-btn--primary {
@@ -93,11 +92,18 @@
   border-color: var(--primary-color);
   color: var(--black-color);
 }
+.pds-btn--primary:focus {
+  outline: 3px solid var(--white-color);
+  outline-offset: -5px;
+}
 
 .pds-btn--secondary {
   background-color: var(--white-color);
   border-color: var(--black-color);
   color: var(--black-color);
+}
+.pds-btn--secondary:focus {
+  outline: 2px solid var(--black-color);
 }
 
 .pds-btn--tertiary {
@@ -105,11 +111,18 @@
   border-color: var(--black-color);
   color: var(--white-color);
 }
+.pds-btn--tertiary:focus {
+  outline: 3px solid var(--white-color);
+  outline-offset: -5px;
+}
 
 .pds-btn--ghost-purple {
   background-color: var(--white-color);
   border-color: var(--accent-1-color);
   color: var(--accent-1-color);
+}
+.pds-btn--ghost-purple:focus {
+  outline: 2px solid var(--accent-1-color);
 }
 
 .pds-btn--ghost-white {
@@ -118,7 +131,7 @@
   color: var(--white-color);
 }
 .pds-btn--ghost-white:focus {
-  outline-color: var(--focus-light-color);
+  outline: 2px solid var(--white-color);
 }
 
 .pds-btn[disabled] {
@@ -127,7 +140,6 @@
   color: var(--white-color);
 }
 
-/* Button sizes */
 .pds-btn--lg {
   padding: 18px 40px 16px;
   font-size: 20px;
@@ -141,6 +153,28 @@
 .pds-btn--sm {
   padding: 12px 28px 10px;
   font-size: 16px;
+}
+
+.pds-btn--secondary.pds-btn--lg:focus,
+.pds-btn--ghost-purple.pds-btn--lg:focus,
+.pds-btn--ghost-white.pds-btn--lg:focus {
+  outline-offset: -8px;
+  padding: 19px 41px 17px;
+  border: 2px solid;
+}
+.pds-btn--secondary.pds-btn--md:focus,
+.pds-btn--ghost-purple.pds-btn--md:focus,
+.pds-btn--ghost-white.pds-btn--md:focus {
+  outline-offset: -7px;
+  padding: 16px 33px 14px;
+  border: 2px solid;
+}
+.pds-btn--secondary.pds-btn--sm:focus,
+.pds-btn--ghost-purple.pds-btn--sm:focus,
+.pds-btn--ghost-white.pds-btn--sm:focus {
+  outline-offset: -6px;
+  padding: 13px 29px 11px;
+  border: 2px solid;
 }
 
 .pds-close-btn {
@@ -287,7 +321,10 @@
   font-weight: 600;
   line-height: 27px;
   border: none;
-  margin-right: 1px;
+  margin-right: 2px;
+}
+.pds-tabset__tab:last-child {
+  margin-right: 0;
 }
 .pds-tabset__tab[aria-selected=true], .pds-tabset__tab:focus {
   background-color: var(--black-color);
@@ -304,7 +341,7 @@
 }
 
 .pds-tabset__tab-title {
-  border-left: 1px solid var(--grey-70-color);
+  border-left: 2px solid var(--grey-70-color);
 }
 
 .pds-tabset__tab:first-child .pds-tabset__tab-title {

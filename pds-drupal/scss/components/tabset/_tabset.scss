@@ -16,7 +16,11 @@
 	font-weight: 600;
 	line-height: 27px;
 	border: none;
-	margin-right: 1px;
+	margin-right: 2px;
+
+	&:last-child {
+		margin-right: 0;
+	}
 
 	&[aria-selected="true"],
 	&:focus {
@@ -38,7 +42,7 @@
 
 // Tab dividing lines.
 .pds-tabset__tab-title {
-	border-left: 1px solid var(--grey-70-color);
+	border-left: 2px solid var(--grey-70-color);
 }
 
 .pds-tabset__tab:first-child {
