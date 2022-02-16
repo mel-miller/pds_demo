@@ -1,0 +1,38 @@
+{% extends "block.html.twig" %}
+
+  {% block content %}
+    {% set title = label %}
+
+    {# Set empty array for tabs #}
+    {% set tabs = [] %}
+
+    {# Get paragraph id for each tab — up to 5 max #}
+    {% for i in 0..4 %}
+      {% set tab_id = content.field_tab[i]['#paragraph'].fields.id.value %}
+
+      {% if tab_id is not null %}
+        {# Load paragraphs for ids that were returned. #}
+        {% set pgraph = bamboo_load_entity('paragraph', tab_id) %}
+        
+        {# Process fields. #}
+        {% set tab_disabled = (pgraph.field_tab_disabled.value == 1) ? 'true' : '' %}
+        {% set tab_title = pgraph.field_tab_title.value %}
+        {% set tab_panel = {
+          '#type': 'processed_text',
+          '#text': pgraph.field_tab_panel.value,
+          '#format': pgraph.field_tab_panel.format,
+          }
+        %}
+
+        {% set tab = {'id': tab_id, 'disabled': tab_disabled, 'title': tab_title, 'content': tab_panel } %}
+
+        {% set tabs = tabs|merge([tab]) %}
+      {% endif %}
+
+    {% endfor %}
+
+    {{ vardumper(tabs) }}
+
+    {% include "@pds/tabset/tabset.twig" %}
+    
+  {% endblock %}

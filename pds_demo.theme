@@ -27,7 +27,24 @@ function pds_demo_preprocess_block(&$variables) {
     // Sets extra vars for custom block types.
     $variables['block_bundle'] = $content['#block_content']->bundle();
     $variables['block_id_num'] = $content['#block_content']->id();
+
+    // Preprocess content for tabset_block.
+    if ($variables['block_bundle'] == "tabset_block" ) {
+      $variables['panel_test'] = 'yes';
+// 
+//       dpm($content['field_tab'][0]['#paragraph']);
+    }
   }
+}
+
+
+/**
+ * Implements HOOK_preprocess_paragraph().
+ */
+function pds_demo_preprocess_paragraph(&$variables) {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  $variables['paragraph'] = $variables['elements']['#paragraph'];
+  $variables['pid'] = $variables['elements']['#paragraph']->id();
 }
 
 /**
